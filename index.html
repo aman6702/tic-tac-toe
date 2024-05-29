@@ -65,7 +65,7 @@
             font-size: 48px;
             font-weight: bolder;
             opacity: 0.1;
-            transition: all 2.5s;
+            transition: opacity 2.5s;
         }
 
         .box{
@@ -173,6 +173,7 @@
             position: absolute;
             top: 250px;
             height: 120px;
+            /* max-width:  510px; */
             width: 510px;
             background-color: rgba(255, 255, 255, 0.45);
             border-radius: 7px;
@@ -181,7 +182,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
+            /* gap: 10px; */
             display: flex;
             z-index: 5;
             transition: all 0.4s;
@@ -225,8 +226,22 @@
             opacity: 1;
         }
 
-        .opacity:hover{
 
+        @media(max-width:520px)
+        {
+        
+            .start-div{
+                height: 210px;
+                width: 200px;
+            }
+
+            .buttons{
+                width: 200px;
+                height: 140px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
         }
 
     </style>
